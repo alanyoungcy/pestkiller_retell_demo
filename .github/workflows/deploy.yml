@@ -37,6 +37,7 @@ jobs:
         env:
           NODE_ENV: production
           CI: false
+          VITE_BASE_PATH: /pestkiller_retell_demo/
 
       - name: Create 404.html for SPA routing
         run: |
