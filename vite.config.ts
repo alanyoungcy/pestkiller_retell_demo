@@ -1,8 +1,9 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
+// https://vitejs.dev/config/
 export default defineConfig({
-  base: process.env.NODE_ENV === 'production' ? '/pestkiller_retell_demo/' : '/',
+  base: '/pestkiller_retell_demo/',
   plugins: [react()],
   server: {
     port: 3000,
