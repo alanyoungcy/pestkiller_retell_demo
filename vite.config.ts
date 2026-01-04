@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/pestkiller_retell_demo/',
+  base: process.env.GITHUB_ACTIONS ? '/pestkiller_retell_demo/' : '/',
   plugins: [react()],
   server: {
     port: 3000,
